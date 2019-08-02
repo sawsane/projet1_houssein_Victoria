@@ -1,0 +1,462 @@
+/* Eléments principaux de la page */
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    background: url(images/banniere2-1.jpg);
+    background-size: 100% auto;
+}
+
+#bloc_page {
+    width: 1000px;
+    margin: auto;
+    border: black double 4px;
+    padding: 40px;
+}
+
+nav a {
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    top: 0;
+    background: url(images/background2.jpg);
+    background-size: 100% auto;
+    background-position: bottom;
+    Height: 200px;
+    border: white double 4px;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1,
+h2 {
+    color: white;
+    text-shadow: 1px 1px 2px blueviolet, 0 0 1em blue, 0 0 0.2em blue;
+    font-weight: 700;
+}
+
+header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.2em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+.icone {
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 0px 0px 6px 5px #67B5FF;
+}
+
+
+/* Navigation */
+
+#menuDeroulant {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#menuDeroulant li {
+    Display: inline-block;
+    text-align: center;
+    border: white solid 1px;
+    color: white;
+    background: rgb(1, 1, 58);
+}
+
+#menuDeroulant ul {
+    padding: 0;
+    position: absolute;
+    left: -9999px;
+    text-align: center;
+    color: black;
+}
+
+#menuDeroulant ul li {
+    display: block;
+    text-align: center;
+    border: white solid 1px;
+    color: black;
+    font-size: 15px;
+    background: lightslategray;
+}
+
+#menuDeroulant li:hover ul,
+#menuDeroulant li:focus ul {
+    left: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    z-index: 5;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#menuDeroulant li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+#menuDeroulant li a:hover {
+    background-color: #111;
+    color: white;
+    box-shadow: 0px 0px 6px 5px #67B5FF;
+}
+
+
+/* Corps */
+
+section {
+    display: flex;
+    margin: 20px 0px 20px 20px;
+    height: 600px;
+}
+
+article {
+    margin-right: 20px;
+    flex: 3;
+    font-size: 18px;
+}
+
+.ico_categorie {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p {
+    font-size: 0.8em;
+}
+
+aside {
+    width: 280px;
+    background-color: lightslategray;
+    box-shadow: 0px 0px 6px 5px #67B5FF;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle {
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor {
+    text-align: center;
+}
+
+#photo_zozor img {
+    border: 1px solid gray;
+}
+
+aside img {
+    margin-right: 5px;
+}
+
+aside h1 {
+    text-align: center;
+}
+
+
+/*Slide photo*/
+
+.gallery {
+    display: block;
+    text-align: center;
+    margin: 70px;
+    padding: 10px;
+    border: solid 1px lightslategray;
+    background: lightblue;
+}
+
+.gallery img {
+    height: 300px;
+    width: 500px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+    justify-content: center;
+    font-size: 10px;
+}
+
+footer div {
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+/*Formulaire*/
+
+.form {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.form span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(1, 1, 58);
+}
+
+.form legend {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(1, 1, 58);
+}
+
+.form fieldset {
+    box-shadow: 0px 0px 6px 5px #67B5FF;
+    border-radius: 5px;
+}
+
+.form fieldset span {
+    font-size: 10px;
+    font-weight: 700;
+    color: red;
+}
+
+
+/* formulaire login*/
+
+#customer input {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+#customer {
+    display: flex;
+}
+
+#customer fieldset {
+    margin: 20px;
+    border: black solid 1px;
+    padding: 10px 50px 50px 50px;
+    width: 700px
+}
+
+#customer legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*Formulaire inscription*/
+
+#formulaire fieldset {
+    margin: 0 auto;
+    border: black solid 1px;
+    padding: 10px;
+    width: 70%;
+    height: 130px;
+}
+
+#formulaire input {
+    display: inline-flex;
+    margin: 5px;
+}
+
+#livraison fieldset {
+    margin: 0 auto;
+    border: black solid 1px;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+}
+
+#paiement fieldset {
+    margin: 0 auto;
+    border: black solid 1px;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+}
+
+
+/*Mise en forme page produit*/
+
+.product {
+    display: flex;
+    width: 700px;
+    height: 100px;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 6px 5px #67B5FF;
+}
+
+.product div {
+    justify-content: space-between;
+    position: bottom;
+}
+
+.productDescription {
+    width: 500px;
+}
+
+.productRef {
+    font-size: 12px;
+}
+
+.productName {
+    font-size: 30px;
+}
+
+
+/*Mise en forme page catégrie produit*/
+
+.productCategory div {
+    display: inline-block;
+    Margin: 20px 20px 20px 0px;
+}
+
+.productCategory span {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(1, 1, 58);
+}
+
+.productCategory div img {
+    margin: 20px 20px 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 5px #67B5FF;
+}
+
+
+/*Mise en forme panier*/
+
+#panier {
+    margin-top: 20px;
+}
+
+#commande {
+    text-align: center;
+    width: 600px;
+    border: solid 1px black;
+    margin: 20px;
+}
+
+#commande th {
+    margin: 20px;
+    font-size: 15px;
+}
+
+#commande td {
+    font-size: 12px;
+}
+
+#panier,
+#prixCommande {
+    justify-content: space-between;
+}
+
+
+/*Mise en forme des bouton de validation*/
+
+.valider {
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+
+/*Pop up*/
+
+
+/* Outer */
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+/* Inner */
+
+.popup-inner {
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    background: #fff;
+}
+
+
+/* Close Button */
+
+.popup-close {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Sans-Serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    color: #fff;
+}
+
+.popup-close:hover {
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform: translate(50%, -50%) rotate(180deg);
+    background: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}

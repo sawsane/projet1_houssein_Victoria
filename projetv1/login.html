@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Roule'Eco</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptLogin.js"></script>
+    <script src="scriptCreation.js"></script>
+</head>
+
+<div id="bloc_page">
+    <header>
+        <div id="titre_principal">
+            <div id="logo">
+                <h1>ROULE'ECO</h1>
+            </div>
+            <h2>Avec le moteur électrique, </br>vous y gagnez, la planète aussi.</h2>
+        </div>
+
+        <nav class="menu">
+            <ul id="menuDeroulant">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="trottinette .html">Trottinette</a>
+                    <ul>
+                        <li><a href="trottinette1.html">Trottinette1</a> </li>
+                        <li><a href="trottinette2.html">Trottinette2</a> </li>
+                        <li><a href="trottinette3.html">Trottinette3</a> </li>
+                    </ul>
+                </li>
+                <li><a href="velo.html">Vélo</a>
+                    <ul>
+                        <li><a href="velo1.html">Vélo1</a> </li>
+                        <li><a href="velo2.html">Vélo2</a> </li>
+                        <li><a href="velo3.html">Vélo3</a> </li>
+                    </ul>
+                </li>
+                <li><a href="scooter.html">Scooter</a>
+                    <ul>
+                        <li><a href="scooter1.html">Scooter1</a> </li>
+                        <li><a href="scooter2.html">Scooter2</a> </li>
+                        <li><a href="scooter3.html">Scooter3</a> </li>
+                    </ul>
+                </li>
+                <li><a href="accessoire.html">Accessoires</a>
+                    <ul>
+                        <li><a href="accessoire1.html">Accessoire1</a> </li>
+                        <li><a href="accessoire2.html">Accessoire2</a> </li>
+                        <li><a href="accessoire3.html">Accessoire3</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="panier.html"><img class="icone" src="images/panier.jpg" alt="panier" height="50px" width="50px" />
+        </a>
+
+        <a href="login.html"><img class="icone" src="images/login.png" alt="login" height="50px" width="50px" />
+        </a>
+
+    </header>
+
+    <body>
+
+        <section>
+
+            <form class="form" id="customer" method="POST" action="">
+                <fieldset>
+                    <legend>Déjà Client?</legend><br><br>
+                    <label for="email"> E-mail:</label><br>
+                    <input type="email" id="email1" name="E-mail" class="champ"><span id="email1_feedback"></span>
+                    <br>
+                    <label for="password"> Password:</label><br>
+                    <input type="password" id="password1" name="Password" class="champ"><span id="password1_feedback"></span>
+                    <br>
+                    <input class="valider" type="submit" value="Se connecter" id="seConnecter">
+                </fieldset>
+                <br>
+                <br>
+                <br>
+                <fieldset id="nouveauClient">
+                    <legend>Nouveau Client?</legend><br><br>
+                    <label for="nom"> Nom:</label><br>
+                    <input type="text" id="nom" name="nom" class="champ"><span id="nom_feedback"></span>
+                    <br>
+                    <label for="prenom"> Prénom:</label><br>
+                    <input type="text" id="prenom" name="prenom" class="champ"><span id="prenom_feedback"></span>
+                    <br>
+                    <label for="email"> E-mail:</label><br>
+                    <input type="email" id="email2" name="email" class="champ"><span id="email2_feedback"></span>
+                    <br>
+                    <input type="password" id="password2" name="password" placeholder="Password" class="champ"><span id="password2_feedback"></span>
+                    <br>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmer Password" class="champ"><span id="confirmPassword_feedback"></span>
+                    <br>
+                    <button id="creerCompte" class="valider" type="submit"><a href="formulaire.html" style="text-decoration:none">Créer son compte</button> <input type="reset" value="Tout effacer" />
+                </fieldset>
+            </form>
+
+        </section>
+    </body>
+
+
+    <footer>
+        <div id="Contact">
+            Roule'Eco<br> 37-39 Rue Saint -Sébastien<br> 75011 Paris<br> Tel: 01 40 21 83 78<br> Mail: contact@rouleco.com<br>
+        </div>
+        <br>
+        <br>
+        <div>
+            Horaires d'ouverture du magasin:<br> Lundi au vendredi : 09h00 à 18h00<br> Samedi : 09h00 à 20h00<br> Dimanche : fermé<br>
+        </div>
+
+        <div>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Condition générale de vente</a></li>
+                <li><a href="#">Condition de paiement</a></li>
+                <li><a href="#">Condtion de livraisonn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+</html>
